@@ -1,0 +1,6 @@
+CREATE DATABASE IF NOT EXISTS bonvoyagency
+  CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+CREATE USER IF NOT EXISTS 'bonvoyagency_app'@'127.0.0.1'
+  IDENTIFIED BY 'Yashu@83173';
+GRANT ALL PRIVILEGES ON bonvoyagency.* TO 'bonvoyagency_app'@'127.0.0.1';
+FLUSH PRIVILEGES;
